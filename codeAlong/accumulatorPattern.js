@@ -1,31 +1,71 @@
-//  basis pattern
+//  basic pattern
 
 // create a variable to accumulate
 
-let num = [2, 5, 6, 10, 100, 40, 42];
+// let num = [2, 5, 6, 10, 100, 40, 42];
 
-// create algorithm that sums all numbers in a given array
+// // create algorithm that sums all numbers in a given array
 
-function sum(numArr){
-// 1. create an accumulator variable
-   let total = 0;
-// 2. Loop
+// function sum(numArr){
+// // 1. create an accumulator variable
+//    let total = 0;
+// // 2. Loop
 
-for(let i=0; i<numArr.length;i++){
-    numArr[i]
+// for(let i=0; i<numArr.length;i++){
+//     numArr[i]
 
-    // may involve if statement
+//     // may involve if statement
 
-    // 3. Act of accumulation
-    total += numArr[i]
+//     // 3. Act of accumulation
+//     total += numArr[i]
+// }
+
+// // return
+// return total;
+
+// }
+
+// // let result = sum(num);
+// // console.log(result);
+
+// console.log(sum(num));
+
+
+// advanced walk through
+
+let groceryPrices = [
+  10.22, 10.89, 1.11, 8.47, 14.52, 7.96, 15.99, 18.52, 5.99, 9.22, 12.45, 19.31,
+  7.27, 14.96, 5.35, 6.14, 6.61, 11.54, 7.3, 5.55,
+];
+
+// given list of grocery store prices, create new list of items > $8
+// input: [...]
+// output: [...]
+
+function findPricesGreaterThanEight(prices){
+
+let pricesGreaterThanEight = [];
+
+// [i] represents value of position
+for(let i=0; i<prices.length; i++){
+    if(prices[i] > 8){
+    pricesGreaterThanEight.push(prices[i]);
+    }
 }
 
-// return
-return total;
+return pricesGreaterThanEight;
 
 }
+let result = findPricesGreaterThanEight(groceryPrices);
+console.log(result);
 
-// let result = sum(num);
-// console.log(result);
 
-console.log(sum(num));
+// average of all prices
+// input: [...]
+// output: number
+
+// find total price of the list of the 3 cheapest items
+// input: [...]
+// output: [...]
+
+
