@@ -42,22 +42,22 @@ let groceryPrices = [
 // input: [...]
 // output: [...]
 
-function findPricesGreaterThanEight(prices){
+// function findPricesGreaterThanEight(prices){
 
-let pricesGreaterThanEight = [];
+// let pricesGreaterThanEight = [];
 
-// [i] represents value of position
-for(let i=0; i<prices.length; i++){
-    if(prices[i] > 8){
-    pricesGreaterThanEight.push(prices[i]);
-    }
-}
+// // [i] represents value of position
+// for(let i=0; i<prices.length; i++){
+//     if(prices[i] > 8){
+//     pricesGreaterThanEight.push(prices[i]);
+//     }
+// }
 
-return pricesGreaterThanEight;
+// return pricesGreaterThanEight;
 
-}
-let result = findPricesGreaterThanEight(groceryPrices);
-console.log(result);
+// }
+// let result = findPricesGreaterThanEight(groceryPrices);
+// console.log(result);
 
 
 // average of all prices
@@ -69,3 +69,33 @@ console.log(result);
 // output: [...]
 
 
+//states and cities code along
+let stateInfo =[
+    {
+        state: "California",
+        cities: ["San Diego", "San Francisco", "Santa Barbara", "Monterey", "Redwood City"],
+    },
+    {
+        state: "Maryland",
+        cities: ["Leonardtown", "St Leonard", "St Mary's City", "Annapolis", "Ocean City"],
+    },
+    {
+        state: "Texas",
+        cities: ["San Antonio", "Austin", "Pflugerville", "Dallas", "Ft Worth", "Paris", "Athens"],
+    },
+];
+
+function stateFlattener(states){
+    let cityAccum = [];
+
+    // dynamically accessing an array for of loops nested into each other
+        for(let state of states){
+        for(let city of state.cities){
+            cityAccum.push(city);
+         } 
+    }
+    return cityAccum;
+}
+
+let cities = stateFlattener(stateInfo);
+console.log(cities);
