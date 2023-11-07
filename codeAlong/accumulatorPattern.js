@@ -33,10 +33,10 @@
 
 // advanced walk through
 
-let groceryPrices = [
-  10.22, 10.89, 1.11, 8.47, 14.52, 7.96, 15.99, 18.52, 5.99, 9.22, 12.45, 19.31,
-  7.27, 14.96, 5.35, 6.14, 6.61, 11.54, 7.3, 5.55,
-];
+// let groceryPrices = [
+//   10.22, 10.89, 1.11, 8.47, 14.52, 7.96, 15.99, 18.52, 5.99, 9.22, 12.45, 19.31,
+//   7.27, 14.96, 5.35, 6.14, 6.61, 11.54, 7.3, 5.55,
+// ];
 
 // given list of grocery store prices, create new list of items > $8
 // input: [...]
@@ -70,32 +70,34 @@ let groceryPrices = [
 
 
 //states and cities code along
-let stateInfo =[
-    {
-        state: "California",
-        cities: ["San Diego", "San Francisco", "Santa Barbara", "Monterey", "Redwood City"],
-    },
-    {
-        state: "Maryland",
-        cities: ["Leonardtown", "St Leonard", "St Mary's City", "Annapolis", "Ocean City"],
-    },
-    {
-        state: "Texas",
-        cities: ["San Antonio", "Austin", "Pflugerville", "Dallas", "Ft Worth", "Paris", "Athens"],
-    },
-];
+// let stateInfo =[
+//     {
+//         state: "California",
+//         cities: ["San Diego", "San Francisco", "Santa Barbara", "Monterey", "Redwood City"],
+//     },
+//     {
+//         state: "Maryland",
+//         cities: ["Leonardtown", "St Leonard", "St Mary's City", "Annapolis", "Ocean City"],
+//     },
+//     {
+//         state: "Texas",
+//         cities: ["San Antonio", "Austin", "Pflugerville", "Dallas", "Ft Worth", "Paris", "Athens"],
+//     },
+// ];
 
-function stateFlattener(states){
-    let cityAccum = [];
+// function stateFlattener(states){
+//     let cityAccum = [];
 
-    // dynamically accessing an array for of loops nested into each other
-        for(let state of states){
-        for(let city of state.cities){
-            cityAccum.push(city);
-         } 
-    }
-    return cityAccum;
-}
+//     // dynamically accessing an array for of loops nested into each other
+//         for(let state of states){
+//         for(let city of state.cities){
+//             cityAccum.push(city);
+//          } 
+//     }
+//     return cityAccum;
+// }
 
-let cities = stateFlattener(stateInfo);
-console.log(cities);
+// let cities = stateFlattener(stateInfo);
+// console.log(cities);
+
+    
